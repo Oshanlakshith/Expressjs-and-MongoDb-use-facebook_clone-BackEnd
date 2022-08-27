@@ -64,8 +64,6 @@ router.put('/:id',async(req,res)=>{
 
 })
 
-
-
 router.get('/:id',async(req,res)=>{
 try {
     const account=await Account.findById(req.params.id)
@@ -74,6 +72,5 @@ try {
     res.send("Err"+err)
 }
 })
-
 
 module.exports=router
