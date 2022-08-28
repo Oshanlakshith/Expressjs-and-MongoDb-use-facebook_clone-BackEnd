@@ -2,11 +2,9 @@ const express=require('express')
 const router=express.Router()
 const Account=require('../models/createAccount.model')
 
-
 router.get('/',async(req,res)=>{
     try {
         const account=await Account.find()
-       // res.send(item)
        res.json(account)
     } catch (error) {
         res.send("Err"+error)
@@ -22,7 +20,7 @@ router.post('/',async(req,res)=>{
         dateofbirth:req.body.dateofbirth,
         password:req.body.password,
         phonenumber:req.body.phonenumber,
-        email:req.body.email,
+        email:req.body.email
     })
 
     try {
