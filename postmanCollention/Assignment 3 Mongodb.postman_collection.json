@@ -102,6 +102,36 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "save image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
