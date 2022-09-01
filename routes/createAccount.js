@@ -23,6 +23,7 @@ router.post('/',async(req,res)=>{
         email:req.body.email
     })
 
+
     try {
        const response=await account.save()
        res.json(response)
